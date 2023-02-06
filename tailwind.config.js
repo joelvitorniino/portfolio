@@ -16,6 +16,9 @@ module.exports = {
       margin: {
         '3em': '4.8px',
         '1.3em': '20.8px'
+      },
+      borderColor: {
+        'black-light': '#111'
       }
     },
   },
