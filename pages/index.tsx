@@ -1,13 +1,11 @@
 import Card from "./components/Card";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Card />
-      <Footer />
+      <div className="flex flex-wrap justify-between items-center max-w-5.3 ml-0 mr-auto">
+          <Card />
+      </div>
     </>
   )   
 }
