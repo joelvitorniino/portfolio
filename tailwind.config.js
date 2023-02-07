@@ -45,6 +45,12 @@ module.exports = {
       },
       transitionDuration: {
         '0.4s': '0.4s'
+      },
+      minHeight: {
+        'vh': '70vh'
+      },
+      maxWidth: {
+        '5.3': '1100px'
       }
     },
   },
