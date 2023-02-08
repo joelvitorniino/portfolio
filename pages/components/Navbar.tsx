@@ -13,7 +13,7 @@ export default function Navbar() {
                     <Link href="/" className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white">Home</Link>
                 </li>
                 <li className="mr-1.3em">
-                    <Link href="/" className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white">Projects</Link>
+                    <Link href="/projects" className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white">Projects</Link>
                 </li>
                 <li className="mr-1.3em">
                     <Link href="/" className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white">About</Link>
