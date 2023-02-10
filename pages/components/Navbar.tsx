@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <nav className="flex justify-between items-center pl-4 pr-1.2em mb-8 bg-black-smooth text-white">
             <div className="flex justify-center items-center">
-                <Image src="/image/portfolio.svg" width="40" height="40" alt="Portfolio Joel Vitor" />
+                <Image src="/images/portfolio.svg" width="40" height="40" alt="Portfolio Joel Vitor" />
                 <h1 className="ml-3em">Portfolio</h1>
             </div>
             <ul className="flex list-none">
