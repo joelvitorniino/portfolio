@@ -18,7 +18,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center h-screen">
     <div className="flex flex-col items-center mb-10">
       <Image
-        src="/image/profile.jpeg"
+        src="/images/profile.jpeg"
         width="128"
         height="128"
         alt="Foto de perfil"
