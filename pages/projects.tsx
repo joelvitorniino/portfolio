@@ -7,7 +7,7 @@ export default function Projects() {
       <Head>
         <title>Projects Page</title>
       </Head>
-      <div className="grid grid-cols-3 justify-between items-center max-w-5.3 ml-0 mr-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 justify-between md:justify-end items-center md:items-stretch max-w-5.3 ml-0 mr-auto">
         <Card imageLink="/images/montyhall.png" width="500" height="500" url="https://monty-hall-xi.vercel.app" title="Problema de Monty Hall" description="Site construído em 2020 usando Vue, com o objetivo de ilustrar o problema de monty hall." repository="https://github.com/joelvitorniino/montyhall" />
         <Card imageLink="/images/calculator.png" width="500" height="500" url="https://calculator-react-5c128.web.app" title="Calculadora React" description="Calculadora construída em 2020 com React. Com o objetivo de treinar a lógica e reforçar as bases do React e TypeScript.  " repository="https://github.com/joelvitorniino/calculator-react/tree/master" />
         <Card imageLink="/images/flappybird.png" width="500" height="500" url="https://joelvitorniino.github.io" title="Flappy Bird" description="Jogo do Flappy Bird feito em 2020 com JS puro." repository="https://github.com/joelvitorniino/joelvitorniino.github.io" />
