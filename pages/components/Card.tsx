@@ -17,7 +17,6 @@ interface CardProps {
 export default function Card(props: CardProps) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex justify-center items-center flex-col">
-      <Link href="#">
         <Image
           className="rounded-t-lg"
           src={props.imageLink}
@@ -25,7 +24,6 @@ export default function Card(props: CardProps) {
           height={props.height}
           alt="Portfolio"
         />
-      </Link>
       <div className="p-7">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {props.title}
@@ -34,7 +32,7 @@ export default function Card(props: CardProps) {
           {props.description}
         </p>
         <Link
-          href={props.url}  
+          href={props.url ?? ''}  
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Details
@@ -54,7 +52,7 @@ export default function Card(props: CardProps) {
         </Link>
 
         <Link
-          href={props.repository}  
+          href={props.repository ?? ''}  
           className="inline-flex items-end px-3 py-2 ml-24 sm:ml-16 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-700 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
         >
           Repository
