@@ -53,7 +53,7 @@ export default function Card(props: CardProps) {
 
         <Link
           href={props.repository ?? ''}  
-          className="inline-flex items-end px-3 py-2 ml-24 sm:ml-16 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-700 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
+          className="inline-flex items-end px-3 py-2 ml-24 sm:ml-16 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-700 dark:hover:bg-gray-800 dark:focus:ring-gray-600 lg:ml-24 md:ml-24 iphone:ml-10"
         >
           Repository
           <svg
