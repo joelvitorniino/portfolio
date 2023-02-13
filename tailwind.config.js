@@ -51,6 +51,9 @@ module.exports = {
       },
       maxWidth: {
         '5.3': '1100px'
+      },
+      screens: {
+        'iphone': '320px'
       }
     },
   },
