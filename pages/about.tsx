@@ -8,6 +8,10 @@ import Link from 'next/link';
 
 export default function About() {
     return (
+        <>
+        <Head>
+            <title>About Page</title>
+        </Head>
         <div className="bg-gray-200 p-8">
             <h1 className="text-3xl font-bold">About</h1>
             <div className="mt-4">
@@ -109,5 +113,6 @@ export default function About() {
                 </span>
             </div>
         </div>
+        </>
     )
 }
