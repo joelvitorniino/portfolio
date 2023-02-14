@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Link from "next/link";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
     return (
+        <>
+        <Head>
+            <title>Contact Page</title>
+        </Head>
         <div className="bg-gray-300 p-8">
             <div className="mt-4">
                 <span className="inline-block m-1">
@@ -24,5 +29,6 @@ export default function Contact() {
                 </span>
             </div>
         </div>
+        </>
     )
 };
