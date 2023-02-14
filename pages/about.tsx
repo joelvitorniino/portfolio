@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { FaDocker, FaGit, FaGithub, FaHtml5, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
-import { SiCss3, SiExpress, SiJava, SiJavascript, SiSpringboot, SiTypescript } from 'react-icons/si';
+import { FaDocker, FaGit, FaGithub, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
+import { SiExpress, SiJava, SiJavascript, SiSpringboot, SiTypescript } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
+import { GrUserWorker } from 'react-icons/gr';
+import Link from 'next/link';
 
 export default function About() {
     return (
@@ -79,7 +81,7 @@ export default function About() {
                 </span>
             </div>
 
-            <div className="mt-7  sm:inline-block">
+            <div className="mt-7 sm:inline-block">
                 <h2 className="text-xl font-bold">Adicionais:</h2>
                 <span className='flex m-2'>
                     <FaDocker size={45} className='inline' />
@@ -94,6 +96,16 @@ export default function About() {
                 <span className='flex m-2'>
                     <FaGithub size={45} className='inline' />
                     <p className='inline ml-2 font-bold'>Github</p>
+                </span>
+            </div>
+
+            <div className="mt-7">
+                <h2 className="text-xl font-bold">Currículo:</h2>
+                <span className='flex m-2'>
+                    <GrUserWorker size={45} className='inline' />
+                    <Link href="/pdf/cv-joel.pdf">
+                        <p className="inline ml-2 font-bold">Download Currículo</p>
+                    </Link>               
                 </span>
             </div>
         </div>
