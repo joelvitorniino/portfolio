@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 import { BsGithub } from 'react-icons/bs'
 import { FaLinkedin } from 'react-icons/fa';
+import Head from 'next/head';
 
 const compliments = [
   'Me chamo Joel Vitor',
@@ -15,6 +16,11 @@ const compliments = [
 export default function Home() {
 
   return (
+    <>
+    <Head>
+      <title>Home Page</title>
+    </Head>
+
     <div className="flex flex-col items-center justify-center h-screen">
     <div className="flex flex-col items-center mb-10">
       <Image
@@ -43,6 +49,7 @@ export default function Home() {
       </Link>
     </div>
   </div>
+  </>
   );
 
 };
