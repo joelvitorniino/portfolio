@@ -10,7 +10,9 @@ const compliments = [
   "Tenho 16 anos",
   "Sou Programador Full Stack",
   "Meu grande sonho é se tornar um grande desenvolvedor!",
-  "Sou programador há 3 anos!",
+  "Estudo programação há 3 anos!",
+  `<a href="/about" class="hover:font-bold">Caso queira saber mais sobre mim clique aqui!</a>`,
+  "Obrigado por ler até o fim!",
 ];
 
 export default function Home() {
