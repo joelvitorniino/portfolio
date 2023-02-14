@@ -9,6 +9,7 @@ export default function Contact() {
         <title>Contact Page</title>
       </Head>
       <div className="bg-gray-300 p-8">
+        <h1 className="text-3xl font-bold">Contact</h1>
         <div className="mt-4">
           <span className="inline-block m-1">
             <FaLinkedin size={45} className="inline" />
