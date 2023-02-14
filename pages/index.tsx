@@ -10,7 +10,7 @@ const compliments = [
   "Tenho 16 anos",
   "Sou Programador Full Stack",
   "Meu grande sonho é se tornar um grande desenvolvedor!",
-  "Estudo programação a 3 anos!",
+  "Sou programador há 3 anos!",
 ];
 
 export default function Home() {
