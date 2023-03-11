@@ -107,6 +107,15 @@ export default function Projects() {
           description="Projeto voluntário desenvolvido para a igreja xv de novembro! Feito em NextJS e TailwindCSS"
           repository="https://github.com/joelvitorniino/church-igrejaxv"
         />
+        <Card
+          imageLink="/images/weather.png"
+          width="500"
+          height="500"
+          url="https://app-weather-liard.vercel.app"
+          title="App Weather"
+          description="Consiste em um site para consultar a previsão do tempo! Feito em Vite React e TailwindCSS"
+          repository="https://github.com/joelvitorniino/app-weather"
+        />
       </div>
     </>
   );
