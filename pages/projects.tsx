@@ -98,6 +98,15 @@ export default function Projects() {
           description="A segunda versão do Chat bot feito em express, agora feito em NextJS e TailwindCSS!"
           repository="https://github.com/joelvitorniino/chatbot-rocketseat-nextjs"
         />
+        <Card
+          imageLink="/images/igrejaxv.png"
+          width="500"
+          height="500"
+          url="https://igrejaxv.org.br"
+          title="Igreja XV de Novembro"
+          description="Projeto voluntário desenvolvido para a igreja xv de novembro! Feito em NextJS e TailwindCSS"
+          repository="https://github.com/joelvitorniino/church-igrejaxv"
+        />
       </div>
     </>
   );
