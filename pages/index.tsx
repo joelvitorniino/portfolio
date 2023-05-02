@@ -7,7 +7,7 @@ import Head from "next/head";
 
 const compliments = [
   "Me chamo Joel Vitor",
-  "Tenho 16 anos",
+  "Tenho 17 anos",
   "Sou Programador Full Stack",
   "Meu grande sonho é se tornar um grande desenvolvedor!",
   "Estudo programação há 3 anos!",
