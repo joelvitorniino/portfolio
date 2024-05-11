@@ -9,7 +9,7 @@ const compliments = [
   "Me chamo Joel Vitor",
   "Sou Programador Full Stack",
   "Meu grande sonho é se tornar um grande desenvolvedor!",
-  "Estudo programação há 3 anos!",
+  "Estudo programação há 4 anos!",
   `<a href="/about" class="hover:font-bold">Caso queira saber mais sobre mim clique aqui!</a>`,
   `<a href="/projects" class="hover:font-bold">Caso queira saber mais sobre os projetos que eu já desenvolvi clique aqui!</a>`,
   "Obrigado por ler até o fim!",
