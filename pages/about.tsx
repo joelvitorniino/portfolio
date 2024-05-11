@@ -28,8 +28,8 @@ export default function About() {
         <h1 className="text-3xl font-bold">About</h1>
         <div className="mt-4">
           <p className="text-xl font-semibold">
-            Olá me chamo Joel Vitor, tenho 16 anos e estou em busca de uma
-            oportunidade na programação! Já estudo programação a 3 anos.
+            Olá me chamo Joel Vitor, tenho 18 anos e estou em busca de uma
+            oportunidade na programação! Já estudo programação a 4 anos.
           </p>
         </div>
         <div className="mt-4">
