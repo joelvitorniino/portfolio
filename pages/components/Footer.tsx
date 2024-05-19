@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const year = new Date().getFullYear();
+
 export default function Footer() {
   return (
     <>
@@ -11,7 +13,7 @@ export default function Footer() {
           <Link href="https://www.linkedin.com/in/joel-vitor-niino-campos-b319ba238/">
             Joel Vitor
           </Link>{" "}
-          &copy; 2023
+          &copy; { year }
         </div>
       </footer>
     </>
