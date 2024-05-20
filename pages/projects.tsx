@@ -6,7 +6,7 @@ interface Project {
   title: string;
   description: string;
   url: string;
-  imageLink: string;
+  imagelink: string;
   repository: string;
 }
 
@@ -51,7 +51,7 @@ export default function Projects() {
             title={project.title}
             description={project.description}
             url={project.url}
-            imageLink={project.imageLink}
+            imageLink={project.imagelink}
             repository={project.repository}
           />
         ))}
