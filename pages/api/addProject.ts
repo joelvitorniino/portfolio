@@ -12,9 +12,9 @@ export default async function handler(
 
   if (req.method === 'POST') {
     try {
-      const { title, description, url, imageLink, height, width, repository } = req.body;
+      const { title, description, url, imageLink, repository } = req.body;
 
-      if (!title || !description || !url || !imageLink || !height || !width || !repository) {
+      if (!title || !description || !url || !imageLink || !repository) {
         return res.status(400).json({ message: 'Missing required fields' });
       }
 
@@ -24,8 +24,6 @@ export default async function handler(
           description,
           url,
           imageLink,
-          height,
-          width,
           repository,
         },
       });
