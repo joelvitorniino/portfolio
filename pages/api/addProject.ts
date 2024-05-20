@@ -23,8 +23,8 @@ export default async function handler(
           title,
           description,
           url,
-          imageLink,
-          repository,
+          imagelink: imageLink,
+          repository
         },
       });
 
