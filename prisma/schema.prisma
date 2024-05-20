@@ -16,8 +16,6 @@ model Project {
   description String
   url         String
   imageLink   String
-  height      Int
-  width       Int
   repository  String
 
   @@map("projects")
