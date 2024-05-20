@@ -8,13 +8,11 @@ datasource db {
 }
 
 model Project {
-  id          String @id @default(cuid())
+  id          Int    @id @default(autoincrement())
   title       String
   description String
   url         String
-  imageLink   String
-  height      Int
-  width       Int
+  imagelink   String
   repository  String
 
   @@map("projects")
