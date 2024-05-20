@@ -1,21 +1,20 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("POSTGRES_URL") // Replace POSTGRES_URL with your actual PostgreSQL connection URL
+  url      = env("POSTGRES_URL")
 }
 
 model Project {
-  id          String   @id @default(cuid())
+  id          String @id @default(cuid())
   title       String
   description String
   url         String
   imageLink   String
+  height      Int
+  width       Int
   repository  String
 
   @@map("projects")
