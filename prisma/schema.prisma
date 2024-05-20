@@ -20,5 +20,5 @@ model Project {
   width       Int
   repository  String
 
-  @@map("projects") // Optional: Explicitly maps the model to the "projects" table name
+  @@map("projects")
 }
