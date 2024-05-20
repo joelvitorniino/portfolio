@@ -19,8 +19,13 @@ interface Projects {
 }
 
 export default function Projects() {
-  const fetcher = (input: RequestInfo, init?: RequestInit) => fetch(input, init).then(res => res.json())
-  const { data, error } = useSWR<Projects>('/api/projects', fetcher)
+  const fetcher = (input: RequestInfo) => fetch(input, {
+    headers: {
+      'x-api-key': process.env.NEXT_PUBLIC_API_KEY as string,
+      'Content-Type': 'application/json'
+    }
+  }).then(res => res.json())
+  const { data, error } = useSWR<Projects>('/api/projects', fetcher);
 
   if (error) {
     return (
