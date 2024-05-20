@@ -7,8 +7,7 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'cdn-icons-png.flaticon.com',
-        port: '443',
-        pathname: '/icons/png/512/1000/solid/heart.png'
+        pathname: '/**/**/**'
       }
     ],
     formats: ['image/avif', 'image/webp']
