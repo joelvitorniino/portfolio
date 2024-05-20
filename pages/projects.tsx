@@ -2,15 +2,11 @@ import Head from "next/head";
 import Card from "./components/Card";
 import useSWR from 'swr'
 
-type SafeNumber = number | `${number}`;
-
 interface Project {
   title: string;
   description: string;
   url: string;
   imageLink: string;
-  height: SafeNumber;
-  width: SafeNumber;
   repository: string;
 }
 
@@ -56,8 +52,6 @@ export default function Projects() {
             description={project.description}
             url={project.url}
             imageLink={project.imageLink}
-            height={project.height}
-            width={project.width}
             repository={project.repository}
           />
         ))}
