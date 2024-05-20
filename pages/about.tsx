@@ -6,10 +6,10 @@ import {
   FaNodeJs,
   FaPython,
   FaReact,
+  FaJava
 } from "react-icons/fa";
 import {
   SiExpress,
-  SiJava,
   SiJavascript,
   SiSpringboot,
   SiTypescript,
@@ -71,7 +71,7 @@ export default function About() {
           </span>
 
           <span className="flex m-2">
-            <SiJava size={45} className="inline" />
+            <FaJava size={45} className="inline" />
             <p className="inline ml-2 font-bold">
               Java - <span className="font-extrabold"> (Básico)</span>
             </p>
