@@ -22,8 +22,8 @@ export default function Home() {
         <title>Home Page</title>
       </Head>
 
-      <div className="flex flex-col items-center justify-center h-screen">
-        <div className="flex flex-col items-center mb-10">
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="text-center">
           <Image
             src="/images/profile.jpeg"
             width="128"
@@ -32,30 +32,30 @@ export default function Home() {
             className="w-32 h-32 rounded-full mb-4"
           />
           <h1 className="text-4xl font-bold mb-4">Joel Vitor</h1>
-          <h1 className="text-xl iphone:text-center text-gray-700 mb-10">
-            <Typewriter
-              options={{
-                strings: compliments,
-                autoStart: true,
-                loop: true
-              }}
-            />
-          </h1>
         </div>
-        <div className="flex flex-col md:flex-row iphone:grid iphone:grid-cols-2 justify-between w-64">
+        <div className="text-xl iphone:text-center text-gray-700 mb-10">
+          <Typewriter
+            options={{
+              strings: compliments,
+              autoStart: true,
+              loop: true
+            }}
+          />
+        </div>
+        <div className="flex flex-col md:flex-row iphone:grid iphone:grid-cols-2 justify-center items-center gap-4">
           <Link
             href="https://github.com/joelvitorniino"
-            className="bg-gray-300 py-2 px-4 relative -top-12 mr-2 rounded-lg md:mb-0 hover:bg-gray-400"
+            className="bg-gray-300 py-2 px-4 rounded-lg hover:bg-gray-400 flex items-center justify-center gap-2"
           >
-            <BsGithub className="w-7 h-7 inline-block" />
-            <span className="ml-2">Github</span>
+            <BsGithub className="w-7 h-7" />
+            <span>Github</span>
           </Link>
           <Link
             href="https://www.linkedin.com/in/joel-vitor-niino-campos-b319ba238/"
-            className="bg-gray-300 py-2 px-4 relative -top-12 rounded-lg hover:bg-gray-400"
+            className="bg-gray-300 py-2 px-4 rounded-lg hover:bg-gray-400 flex items-center justify-center gap-2"
           >
-            <FaLinkedin className="w-7 h-7 inline-block" />
-            <span className="ml-2">Linkedin</span>
+            <FaLinkedin className="w-7 h-7" />
+            <span>Linkedin</span>
           </Link>
         </div>
       </div>
