@@ -5,12 +5,12 @@ import React from "react";
 type SafeNumber = number | `${number}`;
 
 interface CardProps {
-  imageLink: string;
-  width: SafeNumber;
-  height: SafeNumber;
-  url: string;
   title: string;
   description: string;
+  url: string;
+  imageLink: string;
+  height: SafeNumber;
+  width: SafeNumber;
   repository: string;
 }
 
