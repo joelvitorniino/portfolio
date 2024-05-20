@@ -1,14 +1,15 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { prisma } from '../../lib/prisma';
 
-type ResponseData = {
-  message: string;
-};
-
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<ResponseData>
+  res: NextApiResponse
 ) {
+  const apiKey = req.headers['x-api-key'];
+  if (apiKey !== process.env.API_KEY) {
+    return res.status(401).json({ message: 'Unauthorized' });
+  }
+
   if (req.method === 'POST') {
     try {
       const { title, description, url, imageLink, height, width, repository } = req.body;
