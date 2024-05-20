@@ -7,16 +7,18 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url      = env("DATABASE_URL") // Ensure the .env file contains this variable.
 }
 
 model Project {
-  id  String   @id @default(cuid())
-  title String
+  id          String   @id @default(cuid())
+  title       String
   description String
-  url String
-  imageLink String
-  height Int
-  width Int
-  repository String
+  url         String
+  imageLink   String
+  height      Int
+  width       Int
+  repository  String
+
+  @@map("projects") // Optional: Explicitly maps the model to the "projects" table name
 }
