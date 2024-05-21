@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Card from "./components/Card";
 import useSWR from 'swr'
+import NextNProgress from 'nextjs-progressbar';
 
 interface Project {
   title: string;
@@ -34,7 +35,7 @@ export default function Projects() {
   if (!data) {
     return (
       <div>
-        <p>Carregando...</p>
+        <NextNProgress />
       </div>
     )
   }
