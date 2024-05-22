@@ -10,8 +10,8 @@ const compliments = [
   "Sou Programador Full Stack",
   "Meu grande sonho é se tornar um grande desenvolvedor!",
   "Estudo programação há 4 anos!",
-  `<a href="/about" class="hover:font-bold">Caso queira saber mais sobre mim clique aqui!</a>`,
-  `<a href="/projects" class="hover:font-bold">Caso queira saber mais sobre os projetos que eu já desenvolvi clique aqui!</a>`,
+  `Caso queira saber mais sobre mim <a href="/about" class="hover:font-bold">clique aqui!</a>`,
+  `Caso queira saber mais sobre os projetos que eu já desenvolvi <a href="/projects" class="hover:font-bold">clique aqui!</a>`,
   "Obrigado por ler até o fim!",
 ];
 
