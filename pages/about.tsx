@@ -29,7 +29,7 @@ export default function About() {
         <div className="mt-4">
           <p className="text-xl font-semibold">
             Olá me chamo Joel Vitor, tenho 18 anos e estou em busca de uma
-            oportunidade na programação! Já estudo programação a 4 anos.
+            oportunidade na programação! Já estudo programação a 4 anos. Atualmente curso Ciência da Computação na UVA (Universidade Veiga de Almeida).
           </p>
         </div>
         <div className="mt-4">
