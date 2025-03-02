@@ -28,8 +28,8 @@ export default function About() {
         <h1 className="text-3xl font-bold">About</h1>
         <div className="mt-4">
           <p className="text-xl font-semibold">
-            Olá me chamo Joel Vitor, tenho 18 anos e estou em busca de uma
-            oportunidade na programação! Já estudo programação a 4 anos. Atualmente curso Ciência da Computação na UVA (Universidade Veiga de Almeida).
+            Olá me chamo Joel Vitor, tenho 18 anos e estou em busca de uma nova
+            oportunidade na programação! Já estudo programação a 5 anos. Atualmente curso Ciência da Computação na Universidade Estácio de Sá.
           </p>
         </div>
         <div className="mt-4">
@@ -121,7 +121,7 @@ export default function About() {
           <h2 className="text-xl font-bold">Currículo:</h2>
           <span className="flex m-2">
             <GrUserWorker size={45} className="inline" />
-            <Link href="/pdf/cv-joel.pdf">
+            <Link href="/pdf/cv_joelvitor.pdf">
               <p className="inline ml-2 font-bold">Download Currículo</p>
             </Link>
           </span>
