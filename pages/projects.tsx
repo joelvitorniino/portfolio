@@ -25,8 +25,6 @@ const fetcher = (input: RequestInfo) => fetch(input, {
 export default function Projects() {
   const { data, error } = useSWR<Projects>('/api/projects', fetcher);
 
-  console.log(data?.data);
-
   if (error) {
     return (
       <div>
