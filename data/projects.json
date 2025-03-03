@@ -3,7 +3,7 @@
 		{
 			"id": "clwe9ze5000002a8amhqxa0rh",
 			"title": "Problema de Monty Hall",
-			"description": "Site construído em 2020 usando Vue, com o objetivo de ilustrar o problema de monty hall.",
+			"description": "Implementação interativa do clássico Problema de Monty Hall, desenvolvida em 2020 com Vue.js, demonstrando conceitos de probabilidade de forma visual e envolvente.",
 			"url": "https://monty-hall-xi.vercel.app",
 			"imageLink": "/images/montyhall.png",
 			"height": 500,
@@ -13,7 +13,7 @@
 		{
 			"id": "clwe9zedo00012a8a3vyxk62q",
 			"title": "Calculadora React",
-			"description": "Calculadora construída em 2020 com React. Com o objetivo de treinar a lógica e reforçar as bases do React e TypeScript.",
+			"description": "Calculadora moderna desenvolvida em 2020 com React e TypeScript, criada para aprimorar a lógica de programação e consolidar os fundamentos do React.",
 			"url": "https://calculator-react-5c128.web.app",
 			"imageLink": "/images/calculator.png",
 			"height": 500,
@@ -23,7 +23,7 @@
 		{
 			"id": "clwe9zei000022a8af88xac4h",
 			"title": "Flappy Bird",
-			"description": "Jogo do Flappy Bird feito em 2020 com JS puro.",
+			"description": "Recriação do clássico Flappy Bird, programado em JavaScript puro em 2020, oferecendo uma experiência nostálgica e desafiadora.",
 			"url": "https://joelvitorniino.github.io",
 			"imageLink": "/images/flappybird.png",
 			"height": 500,
@@ -33,7 +33,7 @@
 		{
 			"id": "clwe9zepo00032a8a5xz73yo4",
 			"title": "Api Wikipedia",
-			"description": "Projeto feito com Flask que consiste em servir uma api da wikipedia de consumo fácil a qualquer um interessado!",
+			"description": "API desenvolvida com Flask que facilita o acesso aos dados da Wikipedia, oferecendo uma interface simples e eficiente para desenvolvedores.",
 			"url": "https://github.com/joelvitorniino/api-wikipedia",
 			"imageLink": "/images/api-wikipedia.png",
 			"height": 500,
@@ -43,7 +43,7 @@
 		{
 			"id": "clwe9zeu100042a8a4ez5tbw7",
 			"title": "Joel Bot",
-			"description": "Bot de whatsapp desenvolvido com TypeScript com o uso da API Baileys!",
+			"description": "Bot para WhatsApp construído em TypeScript, utilizando a API Baileys para automatizar interações e agregar funcionalidades práticas.",
 			"url": "https://github.com/joelvitorniino/joel-bot",
 			"imageLink": "https://cdn-icons-png.flaticon.com/512/4711/4711987.png",
 			"height": 275,
@@ -53,7 +53,7 @@
 		{
 			"id": "clwe9zeyb00052a8am1yp8om3",
 			"title": "Niino Bot",
-			"description": "Bot desenvolvido em Typescript com a API Open-wa! Este projeto foi o responsável por consolidar a minha lógica.",
+			"description": "Bot desenvolvido em TypeScript com a API Open-wa, essencial para fortalecer a lógica de programação e automação.",
 			"url": "https://github.com/joelvitorniino/niino-bot",
 			"imageLink": "https://cdn-icons-png.flaticon.com/512/4711/4711987.png",
 			"height": 251,
@@ -63,7 +63,7 @@
 		{
 			"id": "clwe9zf2k00062a8aedapt1bh",
 			"title": "Livinho Bot",
-			"description": "Bot desenvolvido em Typescript com a API Baileys! Este projeto foi desenvolvido e mantido durante 6 meses!",
+			"description": "Projeto de bot criado em TypeScript com a API Baileys, mantido por 6 meses, demonstrando persistência e capacidade de manutenção em automação.",
 			"url": "https://github.com/joelvitorniino/livinho-bot",
 			"imageLink": "https://cdn-icons-png.flaticon.com/512/4711/4711987.png",
 			"height": 251,
@@ -73,7 +73,7 @@
 		{
 			"id": "clwe9zf6z00072a8ax7cbfres",
 			"title": "Pokenext",
-			"description": "Site desenvolvido com NextJS com a premissa de consumir API do Pokémon e mostrar em cards!",
+			"description": "Aplicação web construída com Next.js que consome a API do Pokémon para exibir informações em cartões interativos, unindo design moderno e funcionalidade.",
 			"url": "https://pokenext-one-virid.vercel.app",
 			"imageLink": "/images/pokenext.png",
 			"height": 500,
@@ -83,7 +83,7 @@
 		{
 			"id": "clwe9zfb900082a8anqixh7ni",
 			"title": "Chat Bot Rockeseat",
-			"description": "Chat Bot desenvolvido em Express aproveitando o estilo do chat da rocketseat, acrescentando banco de dados, login, registro, logar com google e recuperação de senha.",
+			"description": "Chat bot inspirado no estilo Rockeseat, desenvolvido com Express e integrado a banco de dados, com funcionalidades como login, registro, autenticação com Google e recuperação de senha.",
 			"url": "https://github.com/joelvitorniino/chatbot-rocketseat",
 			"imageLink": "/images/chat-rocketseat.png",
 			"height": 500,
@@ -93,7 +93,7 @@
 		{
 			"id": "clwe9zffn00092a8aefvvg8rt",
 			"title": "Chat Bot Rockeseat NextJS",
-			"description": "A segunda versão do Chat bot feito em express, agora feito em NextJS e TailwindCSS!",
+			"description": "Nova versão do Chat Bot Rockeseat, refeito em Next.js e TailwindCSS, com interface moderna e desempenho aprimorado.",
 			"url": "https://chatbot-rocketseat-nextjs.vercel.app/",
 			"imageLink": "/images/chat-rocketseat-nextjs.png",
 			"height": 500,
@@ -103,7 +103,7 @@
 		{
 			"id": "clwe9zfjt000a2a8ahkf9a55o",
 			"title": "Igreja XV de Novembro",
-			"description": "Projeto voluntário desenvolvido para a igreja xv de novembro! Feito em NextJS e TailwindCSS",
+			"description": "Projeto voluntário: website para a Igreja XV de Novembro, desenvolvido com Next.js e TailwindCSS para modernizar a comunicação digital da instituição.",
 			"url": "https://igrejaxv.org.br",
 			"imageLink": "/images/igrejaxv.png",
 			"height": 500,
@@ -113,7 +113,7 @@
 		{
 			"id": "clwe9zfo6000b2a8a3b6mb8g6",
 			"title": "App Weather",
-			"description": "Consiste em um site para consultar a previsão do tempo! Feito em Vite React e TailwindCSS",
+			"description": "Aplicação web desenvolvida com Vite, React e TailwindCSS, permitindo consultar a previsão do tempo de forma rápida, intuitiva e visualmente atraente.",
 			"url": "https://app-weather-liard.vercel.app",
 			"imageLink": "/images/weather.png",
 			"height": 500,
