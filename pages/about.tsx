@@ -15,7 +15,11 @@ export default function About() {
       <Head>
         <title>Sobre Joel Vitor - Portfólio</title>
       </Head>
-      <main className="bg-gray-100 min-h-screen p-8">
+      {/* 
+        Adicionamos pt-20 (padding-top de 5rem) para empurrar o conteúdo
+        abaixo do navbar fixo. Ajuste conforme necessário.
+      */}
+      <main className="bg-gray-100 min-h-screen p-8 pt-20">
         <section className="max-w-4xl mx-auto bg-white rounded-lg shadow p-8">
           {/* Cabeçalho com Nome e Profissão */}
           <header className="mb-6">
@@ -162,7 +166,7 @@ export default function About() {
           {/* Download do Currículo */}
           <section className="text-center">
             <Link href="/pdf/cv_joelvitor.pdf" className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded">
-                Download Currículo
+              Download Currículo
             </Link>
           </section>
         </section>

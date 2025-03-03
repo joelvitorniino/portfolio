@@ -48,11 +48,13 @@ export default function ProjectsPage() {
       <Head>
         <title>Projetos - Portfólio</title>
       </Head>
-      <div className="min-h-screen bg-gray-100 py-10">
+      <div className="min-h-screen bg-gray-100 pt-20 pb-10">
         <div className="max-w-7xl mx-auto px-4">
           <header className="mb-8 text-center">
             <h1 className="text-4xl font-bold text-gray-800">Meus Projetos</h1>
-            <p className="mt-2 text-lg text-gray-600">Confira alguns dos projetos que desenvolvi.</p>
+            <p className="mt-2 text-lg text-gray-600">
+              Confira alguns dos projetos que desenvolvi.
+            </p>
           </header>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data.data.map((project) => (

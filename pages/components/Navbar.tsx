@@ -1,53 +1,115 @@
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <nav className="flex justify-between items-center pl-4 pr-1.2em mb-8 bg-black-smooth text-white">
-      <div className="flex justify-center items-center">
-        <Image
-          src="/images/portfolio.svg"
-          width="40"
-          height="40"
-          alt="Portfolio Joel Vitor"
-          className="iphone:w-0 iphone:h-0 lg:w-10 lg:h-10 md:w-10 md:h-10 sm:w-10 sm:h-10"
-        />
-        <h1 className="lg:ml-2 md:ml-3em sm:ml-3em iphone:-ml-3">Portfolio</h1>
-      </div>
-      <ul className="flex list-none">
-        <li className="lg:mr-1.3em max-sm:mr-2 iphone:mr-0 iphone:ml-7">
-          <Link
-            href="/"
-            className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white"
+    <header className="bg-black text-white shadow-md fixed w-full top-0 z-50">
+      <nav className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        {/* Logo e título */}
+        <Link href="/" className="flex items-center">
+          <Image 
+            src="/images/portfolio.svg" 
+            alt="Portfolio Logo" 
+            width={40} 
+            height={40} 
+          />
+          <span className="ml-2 text-xl font-bold">Portfolio</span>
+        </Link>
+
+        {/* Menu Desktop */}
+        <ul className="hidden md:flex space-x-6">
+          <li>
+            <Link href="/" className="hover:text-gray-300 transition">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/projects" className="hover:text-gray-300 transition">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-gray-300 transition">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="hover:text-gray-300 transition">
+              Contact
+            </Link>
+          </li>
+        </ul>
+
+        {/* Botão do menu Mobile */}
+        <div className="md:hidden">
+          <button
+            className="focus:outline-none"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            Home
-          </Link>
-        </li>
-        <li className="lg:mr-1.3em max-sm:mr-2 iphone:mr-0">
-          <Link
-            href="/projects"
-            className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white"
-          >
-            Projects
-          </Link>
-        </li>
-        <li className="lg:mr-1.3em max-sm:mr-1 iphone:mr-0 iphone:-ml-1">
-          <Link
-            href="/about"
-            className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white"
-          >
-            About
-          </Link>
-        </li>
-        <li className="lg:mr-1.3em max-sm:-mr-2 iphone:-ml-1">
-          <Link
-            href="/contact"
-            className="text-white no-underline p-1 transition border border-b-2 border-solid border-transparent hover:border-white"
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </nav>
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth="2" 
+                d="M4 6h16M4 12h16M4 18h16" 
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-black text-white">
+          <ul className="flex flex-col space-y-2 p-4">
+            <li>
+              <Link 
+                href="/" 
+                className="hover:text-gray-300 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/projects" 
+                className="hover:text-gray-300 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/about" 
+                className="hover:text-gray-300 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/contact" 
+                className="hover:text-gray-300 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </header>
   );
 }
