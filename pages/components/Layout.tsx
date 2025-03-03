@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }: React.PropsWithChildren) {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Head>
         <link
           rel="shortcut icon"
@@ -13,8 +13,10 @@ export default function Layout({ children }: React.PropsWithChildren) {
         />
       </Head>
       <Navbar />
-      <main className="min-h-vh">{children}</main>
+      <main className="flex-grow">
+        {children}
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
