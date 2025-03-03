@@ -1,132 +1,172 @@
-import Head from "next/head";
-import {
-  FaDocker,
-  FaGit,
-  FaGithub,
-  FaNodeJs,
-  FaPython,
-  FaReact,
-  FaJava
-} from "react-icons/fa";
-import {
-  SiExpress,
-  SiJavascript,
-  SiSpringboot,
-  SiTypescript,
-} from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { GrUserWorker } from "react-icons/gr";
-import Link from "next/link";
+import Head from 'next/head'
+import Link from 'next/link'
+import { 
+  FaDocker, FaGit, FaGithub, FaNodeJs, FaPython, FaReact, FaJava 
+} from 'react-icons/fa'
+import { 
+  SiExpress, SiJavascript, SiSpringboot, SiTypescript 
+} from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { GrUserWorker } from 'react-icons/gr'
 
 export default function About() {
   return (
     <>
       <Head>
-        <title>About Page</title>
+        <title>Sobre Joel Vitor - Portfólio</title>
       </Head>
-      <div className="bg-gray-200 p-8">
-        <h1 className="text-3xl font-bold">About</h1>
-        <div className="mt-4">
-          <p className="text-xl font-semibold">
-            Olá me chamo Joel Vitor, tenho 18 anos e estou em busca de uma nova
-            oportunidade na programação! Já estudo programação a 5 anos. Atualmente curso Ciência da Computação na Universidade Estácio de Sá.
-          </p>
-        </div>
-        <div className="mt-4">
-          <h2 className="text-xl font-bold">Conhecimentos:</h2>
-          <span className="inline-block m-1">
-            <FaReact size={51} className="inline" />
-            <p className="inline ml-2 font-bold">
-              React - <span className="font-extrabold"> (Básico)</span>
+      <main className="bg-gray-100 min-h-screen p-8">
+        <section className="max-w-4xl mx-auto bg-white rounded-lg shadow p-8">
+          {/* Cabeçalho com Nome e Profissão */}
+          <header className="mb-6">
+            <h1 className="text-4xl font-bold text-gray-800">Joel Vitor Niino Campos</h1>
+            <p className="text-lg text-gray-600 mt-2">Programador | Estudante de Ciência da Computação</p>
+          </header>
+
+          {/* Sobre Mim */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold border-b pb-2">Sobre Mim</h2>
+            <p className="mt-4 text-gray-700">
+              Olá, sou Joel Vitor, tenho 18 anos e estudo programação há 5 anos. Atualmente curso Ciência da Computação na Universidade Estácio de Sá.
+              Ao longo desse período, tive a oportunidade de atuar em estágios que me permitiram crescer tecnicamente e profissionalmente. Sou dedicado, colaborativo e sempre em busca de novos desafios.
             </p>
-          </span>
+          </section>
 
-          <span className="flex m-2">
-            <SiTypescript size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              TypeScript -{" "}
-              <span className="font-extrabold"> (Intermediário)</span>
-            </p>
-          </span>
+          {/* Experiências Profissionais */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold border-b pb-2">Experiências Profissionais</h2>
+            <div className="mt-4 space-y-4">
+              <article>
+                <h3 className="text-xl font-semibold">Bravo Studios — Estagiário em Desenvolvimento</h3>
+                <span className="text-gray-500">Outubro 2024 - Fevereiro 2025</span>
+                <p className="mt-2 text-gray-700">
+                  Atuação no desenvolvimento de aplicações utilizando NodeJS, NestJS, PHP e TypeScript.
+                </p>
+              </article>
+              <article>
+                <h3 className="text-xl font-semibold">ADDAF — Estagiário em TI</h3>
+                <span className="text-gray-500">Maio 2024 - Outubro 2024</span>
+                <p className="mt-2 text-gray-700">
+                  Desenvolvimento de aplicações com Delphi e PHP, suporte interno (Windows Server 2012) e manutenção de computadores, além da criação de websites com WordPress.
+                </p>
+              </article>
+            </div>
+          </section>
 
-          <span className="flex m-2">
-            <FaNodeJs size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              NodeJs - <span className="font-extrabold"> (Intermediário)</span>
-            </p>
-          </span>
+          {/* Educação */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold border-b pb-2">Educação</h2>
+            <div className="mt-4">
+              <article>
+                <h3 className="text-xl font-semibold">Universidade Estácio de Sá</h3>
+                <span className="text-gray-500">Bacharelado em Ciência da Computação (2° período) — Setembro 2024 - Dezembro 2028</span>
+              </article>
+            </div>
+          </section>
 
-          <span className="flex m-2">
-            <TbBrandNextjs size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              NextJS - <span className="font-extrabold"> (Intermediário)</span>
-            </p>
-          </span>
+          {/* Projetos Voluntários */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold border-b pb-2">Projetos Voluntários</h2>
+            <div className="mt-4">
+              <article>
+                <h3 className="text-xl font-semibold">Igreja XV de Novembro — Website</h3>
+                <span className="text-gray-500">Fevereiro 2023</span>
+                <p className="mt-2 text-gray-700">
+                  Desenvolvimento voluntário de um website para a Igreja XV de Novembro.
+                </p>
+              </article>
+            </div>
+          </section>
 
-          <span className="flex m-2">
-            <SiExpress size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              Express - <span className="font-extrabold"> (Intermediário)</span>
-            </p>
-          </span>
+          {/* Competências Técnicas */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold border-b pb-2">Competências Técnicas</h2>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-center">
+                <FaReact size={40} className="mr-3 text-blue-500" />
+                <span className="font-semibold">React (Básico)</span>
+              </div>
+              <div className="flex items-center">
+                <SiTypescript size={40} className="mr-3 text-blue-600" />
+                <span className="font-semibold">TypeScript (Intermediário)</span>
+              </div>
+              <div className="flex items-center">
+                <FaNodeJs size={40} className="mr-3 text-green-500" />
+                <span className="font-semibold">NodeJS (Intermediário)</span>
+              </div>
+              <div className="flex items-center">
+                <TbBrandNextjs size={40} className="mr-3" />
+                <span className="font-semibold">Next.js (Intermediário)</span>
+              </div>
+              <div className="flex items-center">
+                <SiExpress size={40} className="mr-3 text-gray-700" />
+                <span className="font-semibold">Express (Intermediário)</span>
+              </div>
+              <div className="flex items-center">
+                <FaJava size={40} className="mr-3 text-red-500" />
+                <span className="font-semibold">Java (Básico)</span>
+              </div>
+              <div className="flex items-center">
+                <SiSpringboot size={40} className="mr-3 text-green-700" />
+                <span className="font-semibold">Spring Boot (Básico)</span>
+              </div>
+              <div className="flex items-center">
+                <FaPython size={40} className="mr-3 text-yellow-500" />
+                <span className="font-semibold">Python (Básico)</span>
+              </div>
+              <div className="flex items-center">
+                <SiJavascript size={40} className="mr-3 text-yellow-600" />
+                <span className="font-semibold">JavaScript (Avançado)</span>
+              </div>
+            </div>
+          </section>
 
-          <span className="flex m-2">
-            <FaJava size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              Java - <span className="font-extrabold"> (Básico)</span>
-            </p>
-          </span>
+          {/* Ferramentas & Adicionais */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold border-b pb-2">Ferramentas & Adicionais</h2>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="flex items-center">
+                <FaDocker size={40} className="mr-3 text-blue-400" />
+                <span className="font-semibold">Docker</span>
+              </div>
+              <div className="flex items-center">
+                <FaGit size={40} className="mr-3 text-red-400" />
+                <span className="font-semibold">Git</span>
+              </div>
+              <div className="flex items-center">
+                <FaGithub size={40} className="mr-3 text-gray-800" />
+                <span className="font-semibold">Github</span>
+              </div>
+            </div>
+          </section>
 
-          <span className="flex m-2">
-            <SiSpringboot size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              Spring Boot - <span className="font-extrabold"> (Básico)</span>
-            </p>
-          </span>
+          {/* Idiomas */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold border-b pb-2">Idiomas</h2>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <span className="font-semibold">Japonês:</span> Intermediário
+              </div>
+              <div>
+                <span className="font-semibold">Inglês:</span> Intermediário
+              </div>
+              <div>
+                <span className="font-semibold">Espanhol:</span> Intermediário
+              </div>
+              <div>
+                <span className="font-semibold">Mandarim:</span> Básico
+              </div>
+            </div>
+          </section>
 
-          <span className="flex m-2">
-            <FaPython size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              Python - <span className="font-extrabold"> (Básico)</span>
-            </p>
-          </span>
-
-          <span className="flex m-2">
-            <SiJavascript size={45} className="inline" />
-            <p className="inline ml-2 font-bold">
-              Javascript - <span className="font-extrabold"> (Avançado)</span>
-            </p>
-          </span>
-        </div>
-
-        <div className="mt-7 sm:inline-block">
-          <h2 className="text-xl font-bold">Adicionais:</h2>
-          <span className="flex m-2">
-            <FaDocker size={45} className="inline" />
-            <p className="inline ml-2 font-bold">Docker</p>
-          </span>
-
-          <span className="flex m-2">
-            <FaGit size={45} className="inline" />
-            <p className="inline ml-2 font-bold">Git</p>
-          </span>
-
-          <span className="flex m-2">
-            <FaGithub size={45} className="inline" />
-            <p className="inline ml-2 font-bold">Github</p>
-          </span>
-        </div>
-
-        <div className="mt-7">
-          <h2 className="text-xl font-bold">Currículo:</h2>
-          <span className="flex m-2">
-            <GrUserWorker size={45} className="inline" />
-            <Link href="/pdf/cv_joelvitor.pdf">
-              <p className="inline ml-2 font-bold">Download Currículo</p>
+          {/* Download do Currículo */}
+          <section className="text-center">
+            <Link href="/pdf/cv_joelvitor.pdf" className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded">
+                Download Currículo
             </Link>
-          </span>
-        </div>
-      </div>
+          </section>
+        </section>
+      </main>
     </>
-  );
+  )
 }
